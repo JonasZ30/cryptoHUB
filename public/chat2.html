@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" 
+  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CryptoHUB | Chat</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+        <img alt="CryptoHUB Logo" src="images/cryptoHUB.png" width="200" height="60">
+    </a>
+    <ul class="naviList">
+        <li class="naviItem"><a href="index.html">Homepage</a></li>
+        <li class="naviItem"><a href="courses.html">Courses</a></li>
+        <li class="naviItem"><a href="learn.html">Learn</a></li>
+        <li class="naviItem"><a href="aboutUs.html">About us</a></li>
+        <li class="naviItem"><a href="chat.html">Chat</a></li>
+    </ul>
+</header>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1><i class="fab fa-bitcoin"></i> CryptoChat</h1>
+      <a href="chat.html" class="btn">Leave Room</a>
+    </header>
+
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="room"></i> Room Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="allUsers"></i> Users</h3>
+        <ul id="users"></ul>
+      </div>
+      <div class="chat-messages"></div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.2/qs.min.js" 
+  integrity="sha512-vCegEXqPUYpZsTGz2lk0jaQ1psxtFeniVJACAXhMVxuoYa/N4nZkjoVFOxLwP7uGeQOoemiz7DQrIpRTj4IBPw==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+
+  <footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p class="mail">Email: <a href="mailto: sup.cryptohub@gmail.com">sup.cryptohub@gmail.com</a></p>
+            <p>Phone: <i>Currently not availabe!</i> </p>
+        </div>
+        
+        <div class="social-media">
+            <h3>Connect with Us</h3>
+            <a href="https://twitter.com/CryptoHubZH" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2024 CryptoHUB.</p>
+    </div>
+</footer>
+</body>
+</html>
