@@ -3,6 +3,7 @@ const chatMessage = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const allUser = document.getElementById('users');
 
+// Get information from the link (username and room)
 const {username, room} = Qs.parse(location.search, {
   ignoreQueryPrefix: true
 });

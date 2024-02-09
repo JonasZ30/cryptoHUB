@@ -26,6 +26,10 @@ img {
     height: auto;
 }
 
+h2{
+    color: white;
+}
+
 .logo {
     text-decoration: none;
     display: flex;
@@ -264,7 +268,7 @@ main {
 }
 
 legend {
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bolder;
 }
 
