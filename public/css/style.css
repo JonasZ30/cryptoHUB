@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
 
 /* HEADER */
 header {
@@ -18,7 +18,7 @@ header {
     top: 0;
     z-index: 1;
     background-color: #000000;
-  }
+}
 
 
 img {
@@ -26,7 +26,7 @@ img {
     height: auto;
 }
 
-h2{
+h2 {
     color: white;
 }
 
@@ -112,24 +112,24 @@ main {
 }
 
 .cryptos h2 {
-    background-color: rgba(36, 34, 34, 0.9);
-    color: white;
-    padding: 20%;
     margin: 1%;
-    margin-bottom: 45%;
+    margin-bottom: 35%;
     border-radius: 10%;
 }
 
 .bitcoin {
     grid-column: 1;
+    margin-left: 15%;
 }
 
 .ethereum {
     grid-column: 2;
+    margin-left: 15%;
 }
 
-.tether {
+.dogecoin {
     grid-column: 3;
+    margin-left: 15%;
 }
 
 .news {
@@ -321,36 +321,37 @@ footer {
     background-color: #000000;
     color: white;
     padding: 10px 0;
-    margin-top: auto; /* Push the footer to the bottom */
-  }
-  
-  .footer-content {
+    margin-top: auto;
+    /* Push the footer to the bottom */
+}
+
+.footer-content {
     display: flex;
     justify-content: space-around;
-  }
-  
-  .contact-info,
-  .social-media {
+}
+
+.contact-info,
+.social-media {
     text-align: center;
     color: blueviolet;
     font-weight: bold;
-  }
-  
-  .mail a:link {
+}
+
+.mail a:link {
     color: blueviolet;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .social-media a {
+}
+
+.social-media a {
     display: block;
     margin-top: 10px;
     color: blueviolet;
     text-decoration: none;
-  }
-  
-  .copyright {
+}
+
+.copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-  }
+}

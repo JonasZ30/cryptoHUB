@@ -45,10 +45,56 @@
         </div>
 
         <div class="cryptos">
-            <h2 class="bitcoin">Bitcoin</h2>
-            <h2 class="ethereum">Ethereum</h2>
-            <h2 class="tether">Tether</h2>
+            <h2>
+                <div class="bitcoin">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "BITSTAMP:BTCUSD",
+                    "width": 350,
+                    "height": 220,
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "dark",
+                    "noTimeScale": true
+                }
+                    </script>
+                </div>
+            </h2>
+            <h2>
+                <div class="ethereum">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "BITSTAMP:ETHUSD",
+                    "width": 350,
+                    "height": 220,
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "dark",
+                    "noTimeScale": true
+                }
+                    </script>
+                </div>
+            </h2>
+            <h2>
+                <div class="dogecoin">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                    "symbol": "CRYPTO:DOGEUSD",
+                    "width": 350,
+                    "height": 220,
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "dark",
+                    "noTimeScale": true
+                }
+                    </script>
+                </div>
+            </h2>
         </div>
+        
         <div class="news">
             <h2>Latest News</h2>
             <article class="news-item">

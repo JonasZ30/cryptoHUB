@@ -1,35 +1,40 @@
-h2{
+h2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
-.container .coin-price{
+
+.container .coin-price {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 7px;
-    background-color: rgb(100, 31, 164);
+    background-color: rgba(132, 0, 255, 0.664);
     border: solid black;
 }
 
-.container .coin-price .logo{
+.container .coin-price .logo {
     width: 70px;
     margin-right: 10px;
 }
-.container .coin-price .logo img{
+
+.container .coin-price .logo img {
     width: 100%;
 }
-.container .coin-price div{
+
+.container .coin-price div {
     display: block;
 }
-.container .coin-price div h1{
+
+.container .coin-price div h1 {
     font-size: 20px;
 }
