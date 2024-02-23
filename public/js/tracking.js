@@ -1,3 +1,18 @@
+/**
+# @author Jonas Svay <svay.jonas6@gmail.com>
+# @version CryptoHUB 1.0
+# Changes: -
+# Date 23.02.2024
+#
+# Description: Real-time stock market website
+#
+#============================================
+#
+#              CryptoHUB
+#
+#============================================
+ */
+
 const btc = document.getElementById("bitcoin");
 const ltc = document.getElementById("litecoin");
 const eth = document.getElementById("ethereum");

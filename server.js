@@ -1,3 +1,18 @@
+/**
+# @author Jonas Svay <svay.jonas6@gmail.com>
+# @version CryptoHUB 1.0
+# Changes: -
+# Date 23.02.2024
+#
+# Description: Real-time chat server for CryptoHUB
+#
+#============================================
+#
+#              CryptoHUB
+#
+#============================================
+ */
+
 const path = require("path");
 const http = require("http");
 const express = require("express");
@@ -10,7 +25,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('./public')));
 
 const bot = 'CryptoBot';
 
@@ -52,6 +67,6 @@ io.on('connection', socket => {
 });
 
 
-const PORT = 3000;
+const port = 3000;
 
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+server.listen(port, () => console.log(`Server running on port ${port}`));

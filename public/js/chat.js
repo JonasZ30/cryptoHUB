@@ -1,3 +1,18 @@
+/**
+# @author Jonas Svay <svay.jonas6@gmail.com>
+# @version CryptoHUB 1.0
+# Changes: -
+# Date 23.02.2024
+#
+# Description: Real-time chat function with Socket.io
+#
+#============================================
+#
+#              CryptoHUB
+#
+#============================================
+ */
+
 const chatForm = document.getElementById('chat-form');
 const chatMessage = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
@@ -30,7 +45,6 @@ chatForm.addEventListener('submit', (e) => {
   socket.emit('chatMessage', msg)
 
   e.target.elements.msg.value = '';
-  e.target.elements.msg.focus();
 });
 
 function messageOutput(message) {
