@@ -3,7 +3,7 @@ const chatMessage = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
 const allUser = document.getElementById('users');
 
-// Get information from the link (username and room)
+// Get information from the url (username and room)
 const {username, room} = Qs.parse(location.search, {
   ignoreQueryPrefix: true
 });
@@ -18,7 +18,6 @@ socket.on('roomUsers', ({room, users}) => {
 })
 
 socket.on('message', message => {
-  console.log(message);
   messageOutput(message);
 
   chatMessage.scrollTop = chatMessage.scrollHeight;
@@ -50,6 +49,6 @@ function RoomNameOutput(room) {
 
 function UsersOutput(users) {
   allUser.innerHTML = `
-  ${users.map(user => `<li>${user.username}</li>`).join('')}
+${users.map(user => `<li>${user.username}</li>`).join('')}
   `;
 }
